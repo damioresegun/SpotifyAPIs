@@ -66,38 +66,38 @@ There are two options on how to get the scripts running. You can either set it u
 ### Running Spotify APIs on Android
 
 To run these scripts on Android, you need an app called "Termux". **Do not get termux from the Play store. That version is outdated. Use F-Droid or get the v8.apk from github. this link:** https://github.com/termux/termux-app/releases. I am using v0.118.0 ![[Pasted image 20240324214322.png]]
-    - On your mobile phone, go to the link: https://github.com/termux/termux-app/releases
-    - Download the v8a.apk -- in the image above, I got the *termux-app_v0.118.0+github-debug_arm64-v8a.apk* and installed it on my Android phone
-        - Note: Your phone will likely ask you if you want to install/download, go ahead and Download anyway
-        - Then to install you will need to grant access to installing apps from third-parties
-        - Each mobile phone manufacturer handles this slightly differently
-    - Once the app is installed, open it  and do the following:
-        - Type: `pkg update && pkg upgrade` and press enter
-            - This updates and upgrade the Linux packages that come with Termux. Its important to do this so that steps after this don't fail
-        - This will inform you that the update will take up a certain amount of space.
-        - Enter "Y" for yes and press "Enter"
-        - Next, during the update process, you will be prompted multiple times about files that are already on your device which clash with files that the package maintainer wants to install with a package. The default action is always to keep the version on your device. 
-        - So with each prompt asking you something like "Configuration file '/data/data/com.termix/files/usr/etc/tls/openssl.cnf" or something similar, enter "N" to keep default
+- On your mobile phone, go to the link: https://github.com/termux/termux-app/releases
+- Download the v8a.apk -- in the image above, I got the *termux-app_v0.118.0+github-debug_arm64-v8a.apk* and installed it on my Android phone
+    - Note: Your phone will likely ask you if you want to install/download, go ahead and Download anyway
+    - Then to install you will need to grant access to installing apps from third-parties
+    - Each mobile phone manufacturer handles this slightly differently
+- Once the app is installed, open it  and do the following:
+    - Type: `pkg update && pkg upgrade` and press enter
+        - This updates and upgrade the Linux packages that come with Termux. Its important to do this so that steps after this don't fail
+    - This will inform you that the update will take up a certain amount of space.
+    - Enter "Y" for yes and press "Enter"
+    - Next, during the update process, you will be prompted multiple times about files that are already on your device which clash with files that the package maintainer wants to install with a package. The default action is always to keep the version on your device. 
+    - So with each prompt asking you something like "Configuration file '/data/data/com.termix/files/usr/etc/tls/openssl.cnf" or something similar, enter "N" to keep default
 
 #### Installing Python and its libraries
 
-    - To run the script, we need python so install python with: `pkg install python`
-        - Note: This will use ~623MB of storage
-        - Accept with "Y" and proceed with the installation
-    - Next, we will install packages that are needed to first get the scripts and then run them. The packages that are too be installed are:
-        - Git -- git
-        - Spotipy -- spotipy
-        - dotenv -- python-dotenv
-        - Flask -- flask
-    - To install these packages, enter: `pip install <package_name>`
-        - `pip install git` or 
-        - `pip install python-dotenv`
-        - Do this for all four packages
-    - Great! Once that is done, we now need to set up termux to access the files storage on your device
-    - To do this enter: `termux-setup-storage`
-        - This will prompt you to give it access to your storage, press "Allow" or "Yes", whichever is in the affirmative
-        - And that's it, now you can navigate your phone like any other linux device
-    - Next I would highly recommend that you make a folder in `~/storage/shared` to hold the SpotifyAPI scripts. 
+- To run the script, we need python so install python with: `pkg install python`
+    - Note: This will use ~623MB of storage
+    - Accept with "Y" and proceed with the installation
+- Next, we will install packages that are needed to first get the scripts and then run them. The packages that are too be installed are:
+    - Git -- git
+    - Spotipy -- spotipy
+    - dotenv -- python-dotenv
+    - Flask -- flask
+- To install these packages, enter: `pip install <package_name>`
+    - `pip install git` or 
+    - `pip install python-dotenv`
+    - Do this for all four packages
+- Great! Once that is done, we now need to set up termux to access the files storage on your device
+- To do this enter: `termux-setup-storage`
+    - This will prompt you to give it access to your storage, press "Allow" or "Yes", whichever is in the affirmative
+    - And that's it, now you can navigate your phone like any other linux device
+- Next I would highly recommend that you make a folder in `~/storage/shared` to hold the SpotifyAPI scripts. 
 
 
     - Install Python
