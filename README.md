@@ -13,10 +13,10 @@ Okay so, this all came about because I wanted to automate a means of creating mo
 ## Some caveats
 
 To run these scripts, you need to do follow a few steps:
-    - Log in to Spotify Developers and create an appropriate app
-    - Download and install python and the libraries
-    - Download this git repository
-    - Run the script
+- Log in to Spotify Developers and create an appropriate app
+- Download and install python and the libraries
+- Download this git repository
+- Run the script
 Don't worry, this will take you through each one of these steps
 
 ## Set-Up
