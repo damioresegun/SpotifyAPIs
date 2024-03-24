@@ -24,23 +24,23 @@ Don't worry, this will take you through each one of these steps
 ### Spotify Developers and Spotify App Creation
 
 The purpose of this step is to essentially create a way to allow the script to talk to Spotify directly. Spotify calls this an "app" which can only be done through the Spotify Developer.
-    - So firstly, go to: "https://developer.spotify.com/" and log into your spotify account
-    - At the top right of the page, click your username and then click "Dashboard"
-    - On the dashboard page, click "Create app". 
-    - Fill in the page to be similar to this screenshot. However:
-        - Change the name of the app to fit the script you wish to attach to this app. 
-        - **Note: One script interacts with one app e.g. the batch deletion script can only interact with an app you make for batch deletion. The batch deletion app cannot interact with the batch deletion script AND the monthly playlist script**
-        - The image: ![[Pasted image 20240324210214.png]]
-        - It is important that you get the Redirect URI correct. It is "http://127.0.0.1:5000/redirect"
-        - Also make sure to tick "Web API"
-        - Once you have filled it in, click "Save"
-        - This brings you to your App Home
-    ## Getting the client ID and secret key
-    To be able to interact with this app you have created, you will need what is essentially the username and password for this app. To get this information:
-    - Click the "Settings" button in the App Home page
-    - On the settings page copy the "ClientID" and save it in a word/text document. **We will need this later**
-    - Beneath the ClientID, click "View client secret", copy that and save in the same document as the client ID
-    - We are done with this page now. 
+- So firstly, go to: "https://developer.spotify.com/" and log into your spotify account
+- At the top right of the page, click your username and then click "Dashboard"
+- On the dashboard page, click "Create app". 
+- Fill in the page to be similar to this screenshot. However:
+    - Change the name of the app to fit the script you wish to attach to this app. 
+    - **Note: One script interacts with one app e.g. the batch deletion script can only interact with an app you make for batch deletion. The batch deletion app cannot interact with the batch deletion script AND the monthly playlist script**
+    - The image: ![[Pasted image 20240324210214.png]]
+    - It is important that you get the Redirect URI correct. It is "http://127.0.0.1:5000/redirect"
+    - Also make sure to tick "Web API"
+    - Once you have filled it in, click "Save"
+    - This brings you to your App Home
+## Getting the client ID and secret key
+To be able to interact with this app you have created, you will need what is essentially the username and password for this app. To get this information:
+- Click the "Settings" button in the App Home page
+- On the settings page copy the "ClientID" and save it in a word/text document. **We will need this later**
+- Beneath the ClientID, click "View client secret", copy that and save in the same document as the client ID
+- We are done with this page now.
 
 ### Making env files
 
