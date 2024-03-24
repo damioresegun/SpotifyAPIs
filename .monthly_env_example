@@ -1,0 +1,5 @@
+CLIENT_ID="enter-your-client-id"
+CLIENT_SECRET="enter-your-client-secret"
+APPSECRET="theseeccreetkeeey92477"
+SCOPE="user-library-read playlist-modify-public playlist-modify-private"
+REDIRECTURI="http://127.0.0.1:5000/redirect"
