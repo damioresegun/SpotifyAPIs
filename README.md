@@ -44,20 +44,20 @@ To be able to interact with this app you have created, you will need what is ess
 
 ### Making env files
 
-    - On your laptop, open notepad (or text editor of your choice. NOT MICROSOFT WORD)
-    - Copy this format:
-    ```txt
-    CLIENT_ID="your_client_ID"
-    CLIENT_SECRET="your_client_secret"
-    APPSECRET="random_set_of_characters_you_choose_eg_hghshsfhsiofh949tbdadsfih"
-    SCOPE="user-library-read playlist-modify-public playlist-modify-private"
-    REDIRECTURI="http://127.0.0.1:5000/redirect"
-    ```
-    - **It is important that these are set up like this.**
-    - Depending on the script you wish to run, the filename to save this as will be different. 
-        - If you wish to run the batch deletion script, save this file as "**.batch_del_env**" 
-        - If you wish to run the save discover weekly script, save this file as "**.weekly_env**" 
-        - If you wish to run the monthly playlist script, save this file as "**.monthly_env**" 
+- On your laptop, open notepad (or text editor of your choice. NOT MICROSOFT WORD)
+- Copy this format:
+```txt
+CLIENT_ID="your_client_ID"
+CLIENT_SECRET="your_client_secret"
+APPSECRET="random_set_of_characters_you_choose_eg_hghshsfhsiofh949tbdadsfih"
+SCOPE="user-library-read playlist-modify-public playlist-modify-private"
+REDIRECTURI="http://127.0.0.1:5000/redirect"
+```
+- **It is important that these are set up like this.**
+- Depending on the script you wish to run, the filename to save this as will be different. 
+    - If you wish to run the batch deletion script, save this file as "**.batch_del_env**" 
+    - If you wish to run the save discover weekly script, save this file as "**.weekly_env**" 
+    - If you wish to run the monthly playlist script, save this file as "**.monthly_env**" 
 
 ## Running the scripts
 
