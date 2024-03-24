@@ -1,6 +1,8 @@
 # SpotifyAPIs
-This repo is really just a personal project that I have used as a starter for playing around with the Spotify API. I hope to be adding more API scripts or maybe even develop a backend server to have these scripts running constantly. However, currently, these only exist as scripts that work (I hope!). 
+This repo is really just a personal project that I have used as a starter for playing around with the Spotify API. I hope to be adding more API scripts or maybe even develop a backend server to have these scripts running constantly. However, currently, these only exist as scripts that work (I hope!).
+
 # Purpose and Content
+
 Okay so, this all came about because I wanted to automate a means of creating monthly playlists. The idea was to have a way to get all songs that I like in a given month to be saved in a secondary playlist that is titled "Month Year". That has spiralled into two additional scripts and a third script which isn't really that important but it's a fun test case. So this repository -- at the time of writing contains:
     - "**getMonthly.py**" -- as the name suggests, this script gets the monthly playlist. To break it down, this script uses the client ID and client secret key (which will explained below) that has been set up with the Spotify API to get the list of playlists the user has, looks for the "Liked Songs" and compares when these songs were added to the time the script was last run. Depending on the added dates on the songs, it places them into newly created and appropriately named playlists. If these playlists already exist, in case you decide to run this script multiple times a month, it will place the new songs into the appropriate playlist -- and should not make a new playlist!
 - 
